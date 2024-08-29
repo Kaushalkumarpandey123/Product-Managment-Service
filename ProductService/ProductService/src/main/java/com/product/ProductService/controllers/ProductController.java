@@ -1,14 +1,14 @@
-package com.product.ProductService.controller;
+package com.product.ProductService.controllers;
 
-import com.product.ProductService.dto.ProductDto;
-import com.product.ProductService.service.ProductService;
+import com.product.ProductService.dtos.ProductDto;
+import com.product.ProductService.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/products")
 public class ProductController {
 
     private final ProductService productService;
@@ -23,12 +23,12 @@ public class ProductController {
         return "Product Testing";
     }
 
-    @GetMapping("/getAll")
+    @GetMapping()
     public List<ProductDto> getAllProducts() {
         return productService.getAllProducts();
     }
 
-    @PostMapping("/add")
+    @PostMapping()
     public ProductDto addProduct(@RequestBody ProductDto productDto) {
         return productService.addProduct(productDto);
     }
@@ -43,7 +43,7 @@ public class ProductController {
         return productService.getProduct(id);
     }
 
-    @PutMapping("/update")
+    @PutMapping()
     public ProductDto updateProduct(@RequestBody ProductDto productDto) {
         return productService.updateProduct(productDto);
     }

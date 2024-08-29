@@ -1,6 +1,6 @@
-package com.product.ProductService.dao;
+package com.product.ProductService.daos;
 
-import com.product.ProductService.model.Product;
+import com.product.ProductService.models.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

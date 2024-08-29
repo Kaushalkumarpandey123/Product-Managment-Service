@@ -1,8 +1,8 @@
-package com.product.ProductService.service;
+package com.product.ProductService.services;
 
-import com.product.ProductService.CommonUtil.ProductUtil;
-import com.product.ProductService.dao.ProductDao;
-import com.product.ProductService.dto.ProductDto;
+import com.product.ProductService.commonUtils.ProductUtil;
+import com.product.ProductService.daos.ProductDao;
+import com.product.ProductService.dtos.ProductDto;
 import com.product.ProductService.exceptions.NoDataFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

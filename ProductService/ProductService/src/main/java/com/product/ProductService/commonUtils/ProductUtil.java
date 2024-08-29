@@ -1,7 +1,7 @@
-package com.product.ProductService.CommonUtil;
+package com.product.ProductService.commonUtils;
 
-import com.product.ProductService.dto.ProductDto;
-import com.product.ProductService.model.Product;
+import com.product.ProductService.dtos.ProductDto;
+import com.product.ProductService.models.Product;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

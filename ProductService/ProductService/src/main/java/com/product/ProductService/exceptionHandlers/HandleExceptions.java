@@ -1,4 +1,4 @@
-package com.product.ProductService.exceptionHandler;
+package com.product.ProductService.exceptionHandlers;
 
 import com.product.ProductService.exceptions.NoDataFoundException;
 import org.springframework.http.HttpStatus;

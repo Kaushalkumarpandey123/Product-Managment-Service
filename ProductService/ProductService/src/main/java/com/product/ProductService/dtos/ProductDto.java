@@ -1,4 +1,4 @@
-package com.product.ProductService.dto;
+package com.product.ProductService.dtos;
 
 import lombok.*;
 import org.springframework.stereotype.Component;
