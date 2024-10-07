@@ -11,7 +11,11 @@ import java.util.stream.Collectors;
 public class ProductUtil {
 
     public ProductDto convertToProductDto(Product product) {
-        return new ProductDto(product.getId(), product.getName(), product.getDescription(), product.getPrice());
+        return ProductDto.builder()
+                .id(product.getId())
+                .name(product.getName())
+                .description(product.getDescription())
+                .build();
     }
 
     public List<ProductDto> convertToProductDto(List<Product> products) {
@@ -21,7 +25,11 @@ public class ProductUtil {
     }
 
     public Product convertToProduct(ProductDto productDto) {
-        return new Product(productDto.getId(), productDto.getName(), productDto.getDescription(), productDto.getPrice());
+        return Product.builder()
+                .id(productDto.getId())
+                .name(productDto.getName())
+                .description(productDto.getDescription())
+                .build();
     }
 
 }
